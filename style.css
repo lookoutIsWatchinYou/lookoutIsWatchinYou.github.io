@@ -188,6 +188,7 @@ align-self: center;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+
 font-size: 4.0vw;
 }
 
@@ -197,14 +198,16 @@ height:auto;
 align-self:center;
 padding: 20px;
 border-radius: 100%;
-max-width: 300px;
 }
 
 .bottom-img{
 display:flex;
 flex-direction: column;
 align-content:center;
+align-self: center;
 padding: 10px;
+max-width: 200px;
+
 }
 
 .bottom h2{
@@ -250,8 +253,8 @@ body{
 
 @media only screen and (min-width: 800px) {
 
-.bottom img{
-  max-width: 400px;
+.bottom-img{
+  max-width: 500px;
 
   }
 }
@@ -294,7 +297,7 @@ body{
       font-size: 1.2vw;
 
     }
-    .bottom-img img{
-max-width:500px
+    .bottom-img{
+max-width:600px
     }
 }
