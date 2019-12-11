@@ -191,12 +191,20 @@ align-self: center;
 font-size: 4.0vw;
 }
 
-.bottom img  {
-max-width:300px;
+.bottom-img img {
+width:100%;
 height:auto;
 align-self:center;
 padding: 20px;
 border-radius: 100%;
+max-width: 300px;
+}
+
+.bottom-img{
+display:flex;
+flex-direction: column;
+align-content:center;
+padding: 10px;
 }
 
 .bottom h2{
@@ -243,8 +251,8 @@ body{
 @media only screen and (min-width: 800px) {
 
 .bottom img{
+  max-width: 400px;
 
-  max-width:600px;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -276,6 +284,7 @@ body{
 
 
     .project img{
+      max-width: 600px;
     }
     .footer{
       font-size: 1.0vw;
@@ -285,8 +294,7 @@ body{
       font-size: 1.2vw;
 
     }
-    .bottom img{
-
-    max-width:600px;
+    .bottom-img img{
+max-width:500px
     }
 }
