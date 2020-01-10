@@ -58,7 +58,7 @@ else return window.alert("Game over Restarting ");
     if(game.startingSquares.length==game.usedSquares.length&&game.usedSquares.length!=0)
   {
     setTimeout(function(){      game.gameWon(false);
-    }, 100);
+    }, 200);
 
     }
   },
