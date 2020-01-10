@@ -78,11 +78,6 @@ p2Squares:[],
 
 
   checkIfWinner: function(){
-    /*
-    var p1Array =  TwoDimensional(game.p1Squares,3);
-  var p2Array = TwoDimensional(game.p2Squares,3);
-    //needed to put them in three dimensional array so that the check works
-    */
 //deleted  my solution come with new one tomorrow--lmao! that didnt happen kinda done one scuff as all hell
 
 for(i=0;i<winningSets.length;i++){
@@ -257,7 +252,7 @@ if(inUse==true){
    game.p1Squares.push(+event.srcElement.id+1)
    game.isGameOver();
 
-   if( game.p1Squares.length>=3&& game.p1Squares.length%3==0){
+   if( game.p1Squares.length>=3){
     setTimeout(function(){    game.checkIfWinner(); }, 100);
   }
   setTimeout(function(){
@@ -277,7 +272,7 @@ if(inUse==true){
    game.p2Squares.push(+event.srcElement.id+1)
    game.isGameOver();
 
-   if( game.p2Squares.length>=3&& game.p2Squares.length%3==0){
+   if( game.p2Squares.length>=3){
              setTimeout(function(){    game.checkIfWinner(); }, 100);
 
 
