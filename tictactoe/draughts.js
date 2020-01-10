@@ -250,11 +250,12 @@ if(inUse==true){
   
    game.usedSquares.push(+event.srcElement.id)
    game.p1Squares.push(+event.srcElement.id+1)
-   game.isGameOver();
 
    if( game.p1Squares.length>=3){
     setTimeout(function(){    game.checkIfWinner(); }, 100);
   }
+              game.isGameOver();
+
   setTimeout(function(){
       player.xTurn = false;
     player.oTurn=true;    }, 200)
@@ -270,13 +271,15 @@ if(inUse==true){
 
    game.usedSquares.push(+event.srcElement.id)
    game.p2Squares.push(+event.srcElement.id+1)
-   game.isGameOver();
+   
 
    if( game.p2Squares.length>=3){
              setTimeout(function(){    game.checkIfWinner(); }, 100);
 
 
    }
+              game.isGameOver();
+
    setTimeout(function(){ 
   player.xTurn = true;
     player.oTurn=false;   }, 200)
