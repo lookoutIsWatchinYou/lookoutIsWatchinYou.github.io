@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .columnBlock {
     border: 1px solid gray;
  width:16vh;
@@ -39,46 +38,4 @@ height: 100%;
   p{
       align-self: center;
       font-size:5vh;
-=======
-.columnBlock {
-    border: 1px solid gray;
- width:16vh;
-    display: flex;
-    margin-right: 2px;
-    height:8vh;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer{
-    display: flex;
-    justify-content: center;
-text-decoration: none;
-color:black;
-  }
-  .mainHeading{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding:20px;
-    display:flex;
-    justify-content: center;
-    font-size:5vw;
-  }
-  .container{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-      justify-content: center;
-display:flex;
-flex-direction: row;
-width:100%;
-height: 100%;
-  }
-  @media only screen and (min-width: 1500px) {
-    .columnBlock {
-        width:40vh;
-        height:20vh;
-    }
-  }
-  p{
-      align-self: center;
-      font-size:5vh;
->>>>>>> e0503f0a4ea9ea9ce591b990192c08d6d275b3c5
   }
