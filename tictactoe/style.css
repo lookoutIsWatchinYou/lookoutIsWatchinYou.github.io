@@ -1,8 +1,8 @@
 .columnBlock {
   border-bottom: 1px solid gray;
- width:20vh;
+ width:20vw;
     display: flex;
-    height:10vh;
+    height:10vw;
     align-items: center;
     justify-content: center;
   }
@@ -38,12 +38,17 @@ height: 100%;
     font-size:5vh;
 }
 
+@media only screen and (max-width: 370px) {
+  .columnBlock {
+      width:90px;
+      height:150px;
 
-
+  }
+}
 @media only screen and (max-width: 450px) {
   .columnBlock {
-      width:12.5vh;
-      height:22vh;
+    width:90px;
+      height:150px;
 
   }
 }
