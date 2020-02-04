@@ -42,8 +42,8 @@ height: 100%;
 
 @media only screen and (max-width: 450px) {
   .columnBlock {
-      width:15vh;
-      height:20vh;
+      width:12.5vh;
+      height:22vh;
 
   }
 }
