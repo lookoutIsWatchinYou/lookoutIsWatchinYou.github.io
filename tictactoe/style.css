@@ -40,14 +40,14 @@ height: 100%;
 
 @media only screen and (max-width: 370px) {
   .columnBlock {
-      width:90px;
+      width:95px;
       height:150px;
 
   }
 }
 @media only screen and (max-width: 450px) {
   .columnBlock {
-    width:90px;
+    width:110px;
       height:150px;
 
   }
