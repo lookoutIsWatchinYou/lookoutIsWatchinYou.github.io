@@ -1,11 +1,18 @@
 .columnBlock {
-    border: 1px solid gray;
- width:16vh;
+  border-bottom: 1px solid gray;
+
+
+
+ width:20vh;
     display: flex;
-    margin-right: 2px;
-    height:8vh;
+    height:10vh;
     align-items: center;
     justify-content: center;
+  }
+
+  .rowBlock{
+    border: 1px solid gray;
+
   }
   .footer{
     display: flex;
@@ -29,13 +36,24 @@ flex-direction: row;
 width:100%;
 height: 100%;
   }
+  p{
+    align-self: center;
+    font-size:5vh;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  .columnBlock {
+      width:15vh;
+      height:20vh;
+
+  }
+}
+
   @media only screen and (min-width: 1500px) {
     .columnBlock {
         width:40vh;
         height:20vh;
     }
-  }
-  p{
-      align-self: center;
-      font-size:5vh;
   }
