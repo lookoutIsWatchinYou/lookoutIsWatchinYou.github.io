@@ -12,10 +12,28 @@ body, html{
 }
 
 
+.demo-content{
+  position: absolute; ;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  width:400px;
+  height:auto;
+}
 
-
-
-
+.grid{
+  display:flex;
+  flex-wrap: wrap;
+}
+.small{
+  width: 30px;
+  height: 30px;
+  background-color:#ffa600;
+  margin:2px
+}
 
 /*
 makes the jump to on page links nice and smooth
@@ -34,21 +52,17 @@ body { font-size: 2.7vw; }
   align-content: center;
 }
 .head{
-  background-image: url('repeat.png');
     display: flex;
-
     font-family: 'Ropa Sans', sans-serif;
-
     animation-duration: 3s;
     overflow:hidden;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     animation-name: slideinOne;
-min-height: 100vh;
 flex-flow: column;
-
-
+background-color: #F6F7EB;
+min-height: 100vh;
 }
 
 
@@ -63,7 +77,6 @@ flex-flow: column;
   }
 .main--heading{
   color: #ffa600;
-
     display:flex;
     flex-flow: column;
     margin:0;
@@ -101,6 +114,7 @@ flex-flow: column;
 
 
 .main-p{
+  z-index: 1000;
     font-size: 3.7vw;
     animation-duration: 3s;
     animation-name: slideinTwo;
@@ -148,7 +162,6 @@ border-color:#36471A ;
     background-color: #36471A;
     font-family: 'Lobster', cursive;
     font-weight: bold;
-
 position:sticky; /*easiest way to make fixed    */
 top:0;/*Stays at the top   */
 }
@@ -209,7 +222,12 @@ box-shadow: 5px 5px 5px 5px #aaaaaa;
 }
 
 
+.fireworks{
+  position: absolute;
+  z-index: 0;
+  overflow-x: hidden;
 
+}
 .bottom{
   background-image: url('repeat.png');
 
