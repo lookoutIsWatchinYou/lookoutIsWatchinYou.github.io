@@ -31,9 +31,11 @@ var player = {
 }
 //Value for if a square is in use
 var inUse = false;
-//game Object- contains main methods for the game
 
+//game Object- contains main methods for the game
 var game = {
+
+
   gameWon: function(win) {
       for (i = 0; i < columnBlock.length; i++) {
           columnBlock[i].innerText = ""; //removing string added to each square while playing
@@ -132,13 +134,14 @@ var game = {
 
   }
 }
+//end of game object
 
 
 
 
 //makes the rows for me
 
-//borrowed from stackover flow for convenice
+//borrowed from stackover flow for conveniece
 grid();
 
 function grid() {
@@ -232,35 +235,41 @@ window.onload = function() {
 
 
           if (player.xTurn) {
-
-              //if the element has a class name, and that is 'someclass' then...
+//adding appropriate letter to square
               var p = document.createElement("p");
               var node = document.createTextNode("X");
               p.appendChild(node);
-
+//add it to clicked square
               columnBlock[event.srcElement.id].appendChild(p);
-
+//add to list of used squares and player squares
               game.usedSquares.push(+event.srcElement.id)
               game.p1Squares.push(+event.srcElement.id + 1)
-
+//if theres enough squares for a winning set
               if (game.p1Squares.length >= 3) {
                   setTimeout(function() {
+                      //do it slightly later so if it is a winner other things can happen
                       game.checkIfWinner();
                   }, 100);
               }
+              //this just checks if the board is full and if we should restart
               game.isGameOver();
 
               setTimeout(function() {
+                  //next players turn
                   player.xTurn = false;
                   player.oTurn = true;
               }, 200)
 
           } else if (player.oTurn) {
+              //adding appropriate letter to square
+
               var p = document.createElement("p");
               var node = document.createTextNode("O");
               p.appendChild(node);
+//add it to clicked square
 
               columnBlock[event.srcElement.id].appendChild(p);
+//add to list of used squares and player squares
 
               game.usedSquares.push(+event.srcElement.id)
               game.p2Squares.push(+event.srcElement.id + 1)
@@ -268,14 +277,19 @@ window.onload = function() {
 
               if (game.p2Squares.length >= 3) {
                   setTimeout(function() {
+                                            //do it slightly later so if it is a winner other things can happen
+
                       game.checkIfWinner();
                   }, 100);
 
 
               }
+     //this just checks if the board is full and if we should restart
               game.isGameOver();
 
               setTimeout(function() {
+                                    //next players turn
+
                   player.xTurn = true;
                   player.oTurn = false;
               }, 200)
